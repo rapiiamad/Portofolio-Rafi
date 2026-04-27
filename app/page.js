@@ -24,8 +24,8 @@ export default function Home() {
 
             {/* TEXT */}
             <div className="w-full">
-              <h1 className="text-[64px] md:text-[64px] font-bold leading-relaxed text-[#1E1E1E]">
-                I’m Rafi — a junior web developer <span className="text-[#939393] font-semibold"> who turns
+              <h1 className="text-[64px] md:text-[64px] font-extrabold leading-relaxed text-[#1E1E1E]">
+                I’m Rafi — a junior web developer <span className="bg-gradient-to-r from-black/50 to-black/55 text-transparent bg-clip-text font-"> who turns
                   complex problems into elegant, user-
                   friendly solutions.
                 </span></h1>
