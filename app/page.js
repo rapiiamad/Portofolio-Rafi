@@ -25,7 +25,7 @@ export default function Home() {
             {/* TEXT */}
             <div className="w-full">
               <h1 className="text-[64px] md:text-[64px] font-extrabold leading-relaxed text-[#1E1E1E]">
-                I’m Rafi — a junior web developer <span className="bg-gradient-to-r from-black/50 to-black/55 text-transparent bg-clip-text font-"> who turns
+                I’m Rafi — a junior web developer <span className="bg-gradient-to-r from-black/40 to-black/50 text-transparent bg-clip-text font-semibold"> who turns
                   complex problems into elegant, user-
                   friendly solutions.
                 </span></h1>
@@ -436,7 +436,7 @@ export default function Home() {
                   Name
                 </label>
                 <input
-                  placeholder="Jancok"
+                  placeholder="Your Name"
                   type="text"
                   className="bg-[#F0F0F0] p-5 rounded-sm focus:border-gray-600 outline-none text-[#888888] text-[16px]"
                 />
@@ -447,7 +447,7 @@ export default function Home() {
                   Email
                 </label>
                 <input
-                  placeholder="Kontol"
+                  placeholder="Your Email"
                   type="email"
                   className="bg-[#F0F0F0] p-5 rounded-sm focus:border-gray-600 outline-none text-[#888888] text-[16px]"
                 />
@@ -458,7 +458,7 @@ export default function Home() {
                   Message
                 </label>
                 <textarea
-                  placeholder="Tempek"
+                  placeholder="Your Message"
                   rows="5"
                   className="bg-[#F0F0F0] p-5 rounded-sm focus:border-gray-600 outline-none text-[#888888] text-[16px]"
                 ></textarea>
