@@ -42,7 +42,7 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 left-0 z-51 backdrop-blur-xs">
 
-      <div className="w-full px-4 sm:px-10 lg:px-56 pt-5 flex justify-between items-center">
+      <div className="w-full px-4 sm:px-10 lg:px-65 pt-5 flex justify-between items-center">
 
         {/* LOGO */}
         <a href="#heading">
