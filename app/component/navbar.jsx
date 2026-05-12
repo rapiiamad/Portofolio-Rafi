@@ -42,28 +42,24 @@ export default function Navbar() {
   return (
     <nav className="w-full fixed top-0 left-0 z-51 backdrop-blur-xs">
 
-      <div className="w-full px-4 sm:px-10 lg:px-65 pt-5 flex justify-between items-center">
+      <div className="w-full px-4 sm:px-10 lg:px-65 py-3 justify-between gap-20 flex flex-row items-center bg-[#f7fcff] shadow-lg shadow-black/2">
 
         {/* LOGO */}
-        <a href="#heading">
-          <div className="flex flex-row gap-[20px] items-end bg-white shadow-sm rounded-4xl px-[25px] py-[10px]">
-            <Foto />
-            <h1 className="font-medium text-[20px] text-gray-900">
-              Rafi Ahmad Alfarissi
-            </h1>
-          </div>
-        </a>
+      
+        <button className="py-2 px-8 bg-[#3a3a3a] text-white rounded-full hover:bg-gray-800 transition shadow-md text-[14px] tracking-[3px] font-extrabold jakarta">
+                Fii
+              </button>
 
         {/* MENU */}
-        <ul className="flex gap-[40px] text-[18px] px-[35px] py-[10px] bg-white shadow-sm rounded-4xl">
+        <ul className="flex gap-[40px] text-[16px] px-[35px] py-[10px]">
           {menu.map((item) => (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
                 className={`transition duration-300 ${
                   active === item.id
-                    ? "text-gray-900 font-medium"
-                    : "text-[#939393] hover:text-gray-900"
+                    ? "text-gray-900 font-medium jakarta"
+                    : "text-[#939393] hover:text-gray-900 jakarta"
                 }`}
               >
                 {item.name}
@@ -73,20 +69,9 @@ export default function Navbar() {
         </ul>
 
         {/* CONTACT */}
-        <div className="flex gap-[7px] bg-white shadow-sm rounded-4xl px-[7px] py-[2px]">
-          <a href="https://github.com/rapiiamad">
-            <img src="image/git.png" className="w-[45px] h-[45px] rounded-4xl" />
-          </a>
-          <a href="https://www.linkedin.com/in/rafi-ahmad-alfarissi-721a97381/">
-            <img src="image/in.png" className="w-[45px] h-[45px] rounded-4xl" />
-          </a>
-          <a href="https://mail.google.com/mail/?view=cm&to=rafiahmadalfarissi@gmail.com">
-            <img src="image/gmail.png" className="w-[45px] h-[45px] rounded-4xl" />
-          </a>
-          <a href="https://wa.me/6281230784741">
-            <img src="image/wa.png" className="w-[45px] h-[45px] rounded-4xl" />
-          </a>
-        </div>
+        <a href="#contact"><button className="py-2 px-6 bg-[#3a3a3a] text-white rounded-md hover:bg-[#3c3c3c] hover:cursor-pointer transition shadow-md text-[14px] jakarta font-medium">
+                Get Started
+              </button></a>
 
       </div>
     </nav>
