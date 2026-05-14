@@ -9,7 +9,7 @@ export default function Heading() {
                 id="heading"
                 className="mx-auto px-7 md:px-16 lg:px-65 w-full max-h-screen h-screen flex flex-col items-center justify-center md:justify-center gap-10 md:pt-50 lg:pt-70 md:pb-40 lg:pb-90"
             >
-                <div className="w-full flex flex-col gap-30 md:gap-25 justify-center mt-50">
+                <div className="w-full flex flex-col gap-30 md:gap-25 justify-center mt-30">
                     <Text />
                     <div className="flex flex-col md:flex-row gap-4 md:gap-8 w-full md:w-fit">
                         <button className="py-2 px-8 border-[#3a3a3a] border-[1.5] text-[#3c3c3c] rounded-md hover:bg-[#3c3c3c]/10 transition shadow-md text-[14px] jakarta font-bold">
