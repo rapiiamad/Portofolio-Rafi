@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function ToolsFade({ imgs }) {
   const [index, setIndex] = useState(0);
@@ -15,17 +14,16 @@ export default function ToolsFade({ imgs }) {
   }, [imgs.length]);
 
   return (
-    <div className="w-[25px] h-[25px] relative">
-      {imgs.map((img, i) => (
-        <Image
+    <div className="w-[22px] h-[22px] md:w-[25px] md:h-[25px] relative flex items-center justify-center">
+      {imgs.map((icon, i) => (
+        <div
           key={i}
-          src={img}
-          alt="tool"
-          fill
-          className={`w-[22px] h-[22px] object-cover absolute transition-opacity duration-700 ${
+          className={`absolute text-[18px] md:text-[22px] text-[#3a3a3a] transition-opacity duration-700 ${
             i === index ? "opacity-100" : "opacity-0"
           }`}
-        />
+        >
+          {icon}
+        </div>
       ))}
     </div>
   );

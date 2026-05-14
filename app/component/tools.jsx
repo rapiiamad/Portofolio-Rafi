@@ -1,25 +1,30 @@
+import { CgFigma } from "react-icons/cg";
+import { RiNextjsFill, RiTailwindCssFill, RiHtml5Fill } from "react-icons/ri";
+import { FaElementor, FaWordpress } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa";
+
 export const tools = [
   {
     imgs: [
-      "/image/tailwind.png",
-      "/image/css.png",
-      "/image/next.png",
-      "/image/html.png",
-      "/image/figma.png",
+      <RiTailwindCssFill />,
+      <FaCss3Alt />,
+      <RiNextjsFill />,
+      <RiHtml5Fill />,
+      <CgFigma />,
     ],
     category: "code",
   },
   {
     imgs: [
-      "/image/elementor.png",
-      "/image/wordpress.png",
-      "/image/figma.png",
+      <FaElementor />,
+      <FaWordpress />,
+      <CgFigma />,
     ],
     category: "builder",
   },
   {
     imgs: [
-      "/image/figma.png",
+      <CgFigma />,
     ],
     category: "design",
   },

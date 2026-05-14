@@ -7,11 +7,7 @@ export default function TypingText() {
   const text =
     "I’m Rafi — a frontend developer who turns complex problems into elegant, user-friendly solutions.";
 
-  const images = [
-    "/image/rocket.png",
-    "/image/laptop.png",
-    "/image/star.png",
-  ];
+  const images = ["/image/rocket.png", "/image/laptop.png", "/image/star.png"];
 
   const [displayText, setDisplayText] = useState("");
   const [showImage, setShowImage] = useState(false);
@@ -38,11 +34,11 @@ export default function TypingText() {
     if (!showImage) return;
 
     const interval = setInterval(() => {
-      setFade(false); // fade out
+      setFade(false);
 
       setTimeout(() => {
         setCurrentImage((prev) => (prev + 1) % images.length);
-        setFade(true); // fade in
+        setFade(true);
       }, 500);
     }, 3000);
 
@@ -51,21 +47,22 @@ export default function TypingText() {
 
   return (
     <div className="relative w-full">
-      <h1 className="invisible text-2xl md:text-[58px] font-bold leading-23 jakarta text-left">
+      <h1 className="invisible text-[34px] sm:text-[42px] md:text-[64px] font-semibold leading-tight md:leading-[1.35] jakarta text-left">
         {text}
       </h1>
 
-      <h1 className="absolute inset-0 text-2xl md:text-[64px] font-semibold text-[#3a3a3a] leading-23 jakarta text-left">
+      <h1 className="absolute inset-0 text-[34px] sm:text-[42px] md:text-[64px] font-semibold text-[#3a3a3a] leading-[1.35] md:leading-[1.35] jakarta text-left">
         {displayText}
 
         {showImage && (
           <Image
             src={images[currentImage]}
             alt="icon"
-            width={60}
-            height={60}
-            className={`inline-block ml-6 align-middle transition-opacity duration-900 ${fade ? "opacity-100" : "opacity-0"
-              }`}
+            width={40}
+            height={40}
+            className={`inline-block ml-3 md:ml-6 w-[32px] md:w-[60px] h-[32px] md:h-[60px] align-middle transition-opacity duration-900 ${
+              fade ? "opacity-100" : "opacity-0"
+            }`}
           />
         )}
 

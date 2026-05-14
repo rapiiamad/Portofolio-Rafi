@@ -24,7 +24,7 @@ export default function Home() {
     <>
 
       <Navbar />
-      <main className="min-h-screen flex items-center bg-[#f7fcff] flex-col">
+      <main className="min-h-screen w-full flex items-center bg-[#f7fcff] flex-col">
         <Heading />
         <Profile />
         <Skills />

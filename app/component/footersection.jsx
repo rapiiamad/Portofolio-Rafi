@@ -15,15 +15,15 @@ export default function FooterSec() {
         <Entrance>
             <section
                 id="footer"
-                className="w-full flex flex-col items-center gap-[70px] bg-[#f7fcff] py-15 shadow-[0_-2px_25px_rgba(0,0,0,0.03)]"
+                className="w-full flex flex-col items-center gap-[50px] md:gap-[70px] bg-[#f7fcff] py-15 shadow-[0_-2px_25px_rgba(0,0,0,0.03)]"
             >
-                <h1 className="text-[44px] font-semibold text-[#1E1E1E] [letter-spacing:-2px]">
+                <h1 className="text-[30px] md:text-[44px] font-semibold text-[#1E1E1E] [letter-spacing:-2px]">
                     Porto Rafi
                 </h1>
 
                 <div className="flex flex-col items-center gap-[40px]">
                     <Footer />
-                    <h1 className="text-[14px] font-light text-[#7A7A7A]">
+                    <h1 className="text-[10px] font-light text-[#7A7A7A]">
                         © 2026 Rafi Ahmad Alfarissi. All rights reserved.
                     </h1>
                 </div>
