@@ -7,7 +7,7 @@ export default function Heading() {
         <Entrance>
             <section
                 id="heading"
-                className="mx-auto px-7 md:px-16 lg:px-65 w-full max-h-screen h-screen flex flex-col items-center justify-end md:justify-center gap-10 py-50 md:pt-50 lg:pt-70 md:pb-40 lg:pb-90"
+                className="mx-auto px-7 md:px-16 lg:px-65 w-full max-h-screen h-screen flex flex-col items-center justify-center md:justify-center gap-10 md:pt-50 lg:pt-70 md:pb-40 lg:pb-90"
             >
                 <div className="w-full flex flex-col gap-30 md:gap-25 justify-center mt-25">
                     <Text />
