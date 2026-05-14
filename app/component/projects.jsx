@@ -49,10 +49,10 @@ export default function Projects() {
                     </h1>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-[80px] md:gap-x-[50px] w-full">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-y-[70px] md:gap-x-[50px] w-full">
                     {projects.map((project, index) => (
                         <a href="#projects" key={index}>
-                            <div className="relative group w-full h-[260px] sm:h-[300px] md:h-[345px] rounded-xl overflow-hidden shadow-lg shadow-blue-700/10 hover:scale-[1.03] transition duration-700">
+                            <div className="relative group w-full h-[200px] sm:h-[300px] md:h-[345px] rounded-xl overflow-hidden shadow-lg shadow-blue-700/10 hover:scale-[1.03] transition duration-700">
                                 
                                 <img
                                     src={project.img}
